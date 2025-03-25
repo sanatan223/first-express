@@ -1,0 +1,24 @@
+{
+  "name": "first-express",
+  "version": "1.0.0",
+  "description": "It's a basic backend web page to see how backend works.",
+  "homepage": "https://github.com/sanatan223/first-express#readme",
+  "bugs": {
+    "url": "https://github.com/sanatan223/first-express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanatan223/first-express.git"
+  },
+  "license": "ISC",
+  "author": "Sanatan Sethi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}

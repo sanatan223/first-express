@@ -3,18 +3,18 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.sendFile('pages/index.html', { root: __dirname })
 })
 
 app.get('/:slug', (req, res) => {
     if (req.params.slug == "about"){
-        res.send('this is about page')
+        res.sendFile('pages/about.html', { root: __dirname })
     }
     else if (req.params.slug == "contact-me"){
-        res.send("this is my contact page")
+        res.sendFile('pages/contacts.html', { root: __dirname })
     }
     else {
-        res.send('oops page not found')
+        res.sendFile('pages/404.html', { root: __dirname })
     }
 })
 
